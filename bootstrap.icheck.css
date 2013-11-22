@@ -1,0 +1,46 @@
+.icheckbox,
+.iradio {
+	margin-left: -20px;
+	margin-right: 0.4em;
+	padding: 2px;
+	float: left;
+	top: 0;
+}
+
+.iradio {
+	border-radius: 1em;
+}
+
+.icheckbox.focus,
+.iradio.focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+.icheckbox.disabled,
+.iradio.disabled {
+	pointer-events: auto;
+	cursor: not-allowed;
+}
+
+.icheckbox.btn-default.disabled,
+.iradio.btn-default.disabled {
+	background-color: #EBEBEB;
+}
+
+.icheckbox:before,
+.iradio:before {
+	visibility: hidden;
+}
+
+.icheckbox.checked:before,
+.iradio.checked:before {
+	visibility: visible;
+}
+
+.icheckbox input[type="checkbox"],
+.iradio input[type="radio"] {
+	margin: 0;
+	left: 0;
+}
